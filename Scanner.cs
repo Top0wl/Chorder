@@ -9,6 +9,8 @@ namespace Chorder
     public class Scanner
     {
         private String chordString;
+        private List<String> listStrings;
+        private int currentIndex = 0;
 
         public Scanner()
         {
@@ -18,6 +20,8 @@ namespace Chorder
         public Scanner(String chordString)
         {
             this.chordString = chordString;
+            String[] array = chordString.Split(' ');
+            listStrings = new List<string>(array);
         }
 
         public Chord Read(object chordString)
@@ -29,17 +33,23 @@ namespace Chorder
         public Chord Read()
         {
             //TODO: Реализовать чтение строки с аккордами и возвращением соответствующего аккорда
+            currentIndex++;
             return new Chord();
         }
+        /// <summary>
+        /// Метод проверяет есть ли следующий аккорд в строке
+        /// </summary>
+        /// <returns>True - в строке есть следующий элемент; False - в строке нет следующего элемента</returns>
         public bool Next()
         {
-            //TODO: Реализовать проверку, есть ли следующий элемент
-            Random random = new Random();
-            var num = random.Next(1, 3);
-            if (num == 1)
+            if (currentIndex + 1 <= listStrings.Count)
+            {
                 return true;
+            }
             else
+            {
                 return false;
+            }
         }
     }
 }
