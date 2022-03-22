@@ -18,5 +18,11 @@ namespace Chorder
         {
             this.chord = chord;
         }
+
+        public bool Play()
+        {
+            //TODO: Реализовать метод
+            return true;
+        }
     }
 }
