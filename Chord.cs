@@ -8,8 +8,44 @@ namespace Chorder
 {
     public class Chord
     {
+        public enum Chords
+        {
+            Am,
+            A,
+            E,
+            Em,
+            F,
+            G
+            //TODO: Дописать аккорды
+        }
+
+        public Chords ch;
+
         public Chord()
         {
+
+        }
+
+        public Chord(string chordString)
+        {
+            switch (chordString)
+            {
+                case "Am":
+                {
+                    this.ch = Chords.Am;
+                    break;
+                }
+                case "A":
+                {
+                    this.ch = Chords.A;
+                    break;
+                }
+                //TODO: Дописать реализации
+                default:
+                {
+                    break;
+                }
+            }
         }
     }
 }

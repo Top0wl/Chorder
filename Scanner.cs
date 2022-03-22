@@ -24,17 +24,18 @@ namespace Chorder
             listStrings = new List<string>(array);
         }
 
-        public Chord Read(object chordString)
+        public Chord Read(string chordString)
         {
             //TODO: Реализовать чтение строки с аккордами и возвращением соответствующего аккорда
-            return new Chord();
+            return new Chord(chordString);
         }
 
         public Chord Read()
         {
-            //TODO: Реализовать чтение строки с аккордами и возвращением соответствующего аккорда
+            string stringChord = listStrings[currentIndex];
+            Chord chord = new Chord(stringChord);
             currentIndex++;
-            return new Chord();
+            return chord;
         }
         /// <summary>
         /// Метод проверяет есть ли следующий аккорд в строке
