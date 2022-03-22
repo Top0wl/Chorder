@@ -8,9 +8,15 @@ namespace Chorder
 {
     public class Sound
     {
+        private Chord.Chords chord;
+
         public Sound()
         {
 
+        }
+        public Sound(Chord.Chords chord)
+        {
+            this.chord = chord;
         }
     }
 }

@@ -33,6 +33,7 @@ namespace Chorder
                 case "Am":
                 {
                     this.ch = Chords.Am;
+                    sound = new Sound(Chords.Am);
                     break;
                 }
                 case "A":
