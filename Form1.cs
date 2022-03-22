@@ -16,5 +16,15 @@ namespace Chorder
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Scanner scanner = new Scanner(richTextBox1.Text.ToString());
+            while (scanner.Next())
+            {
+                Chord chord = scanner.Read();
+                chord.Play();
+            }
+        }
     }
 }

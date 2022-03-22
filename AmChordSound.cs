@@ -17,7 +17,7 @@ namespace Chorder
             {
                 using (MemoryStream fileOut = new MemoryStream(Properties.Resources.Am))
                 using (GZipStream gz = new GZipStream(fileOut, CompressionMode.Decompress))
-                    new System.Media.SoundPlayer();
+                    new System.Media.SoundPlayer(gz).Play();
                 return true;
             }
             catch (Exception ex)
