@@ -21,6 +21,11 @@ namespace Chorder
         public Chords ch;
         public Sound sound;
 
+        public void Play()
+        {
+            sound.Play();
+        }
+
         public Chord()
         {
 
@@ -33,7 +38,7 @@ namespace Chorder
                 case "Am":
                 {
                     this.ch = Chords.Am;
-                    sound = new Sound(Chords.Am);
+                    sound = new Sound(Chords.Am, new AmChordSound());
                     break;
                 }
                 case "A":

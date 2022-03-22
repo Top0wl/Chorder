@@ -15,7 +15,7 @@ namespace ChorderTests
         [Test]
         public void SoundPlayTest()
         {
-            Sound sound = new Sound(Chord.Chords.Am);
+            Sound sound = new Sound(Chord.Chords.Am, new AmChordSound());
             bool check = sound.Play();
             if (check)
             {

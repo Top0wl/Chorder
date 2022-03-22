@@ -15,15 +15,15 @@ namespace Chorder
         {
 
         }
-        public Sound(Chord.Chords chord)
+        public Sound(Chord.Chords chord, IChordSound chordSound)
         {
             this.chord = chord;
+            this.chordSound = chordSound;
         }
 
         public bool Play()
         {
             chordSound.Play();
-            //TODO: Реализовать метод
             return true;
         }
     }
