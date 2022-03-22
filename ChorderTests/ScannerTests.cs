@@ -15,7 +15,7 @@ namespace ChorderTests
         [Test]
         public void ScannerReadStringWithChord()
         {
-            String chordsString = "Am";
+            String chordString = "Am";
             Scanner scanner = new Scanner();
             Chord chord = scanner.Read(chordString);
             Assert.NotNull(chord);
