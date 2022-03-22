@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chorder", "Chorder.csproj", "{1C621B0F-EFF1-40E2-B659-7A5C07439667}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChorderTests", "..\ChorderTests\ChorderTests.csproj", "{EAF8B6B5-3829-4C2F-9D23-B45A63DF59E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChorderTests", "ChorderTests\ChorderTests.csproj", "{080ACCC1-AC0E-4AD3-A706-0E992414B905}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{1C621B0F-EFF1-40E2-B659-7A5C07439667}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C621B0F-EFF1-40E2-B659-7A5C07439667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C621B0F-EFF1-40E2-B659-7A5C07439667}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EAF8B6B5-3829-4C2F-9D23-B45A63DF59E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EAF8B6B5-3829-4C2F-9D23-B45A63DF59E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EAF8B6B5-3829-4C2F-9D23-B45A63DF59E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EAF8B6B5-3829-4C2F-9D23-B45A63DF59E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080ACCC1-AC0E-4AD3-A706-0E992414B905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080ACCC1-AC0E-4AD3-A706-0E992414B905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080ACCC1-AC0E-4AD3-A706-0E992414B905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080ACCC1-AC0E-4AD3-A706-0E992414B905}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
