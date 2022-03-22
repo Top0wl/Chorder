@@ -25,9 +25,10 @@ namespace ChorderTests
         {
             String chordsString = "Am E G F";
             Chord chord;
-            Scanner scanner = new Scanner(chordString);
-            while (chord = scanner.Read())
+            Scanner scanner = new Scanner(chordsString);
+            while (scanner.Next())
             {
+                chord = scanner.Read();
                 Assert.NotNull(chord);
             }
         }
