@@ -1,5 +1,6 @@
 ﻿using Chorder;
 using NUnit.Framework;
+using System;
 
 namespace ChorderTests
 {
@@ -10,6 +11,14 @@ namespace ChorderTests
         {
             Scanner scanner = new Scanner();
             Assert.NotNull(scanner);
+        }
+        [Test]
+        public void ScannerReadStringWithChord()
+        {
+            String chordsString = "Am";
+            Scanner scanner = new Scanner();
+            Chord chord = scanner.Read(chordString);
+            Assert.NotNull(chord);
         }
     }
 }
