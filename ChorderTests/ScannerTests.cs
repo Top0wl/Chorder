@@ -32,5 +32,25 @@ namespace ChorderTests
                 Assert.NotNull(chord);
             }
         }
+        [Test]
+        public void ScannerReadAmChord()
+        {
+            String chordsString = "Am";
+            Scanner scanner = new Scanner(chordsString);
+            Chord readChord = scanner.Read();
+
+            Chord createChord = new Chord();
+            createChord.ch = Chord.Chords.Am;
+
+            if (readChord.ch == createChord.ch)
+            {
+                Assert.Pass();
+            }
+            else
+            {
+                Assert.Fail();
+            }
+
+        }
     }
 }
