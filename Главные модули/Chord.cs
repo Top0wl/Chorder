@@ -46,6 +46,7 @@ namespace Chorder
                     this.ch = Chords.A;
                     break;
                 }
+
                 //TODO: Дописать реализации
                 default:
                 {
@@ -53,6 +54,5 @@ namespace Chorder
                 }
             }
         }
-
     }
 }

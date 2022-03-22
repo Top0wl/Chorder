@@ -35,7 +35,7 @@ namespace Chorder
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(76, 234);
+            this.button1.Location = new System.Drawing.Point(76, 254);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 38);
             this.button1.TabIndex = 0;
@@ -45,9 +45,9 @@ namespace Chorder
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(76, 67);
+            this.richTextBox1.Location = new System.Drawing.Point(76, 47);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(363, 134);
+            this.richTextBox1.Size = new System.Drawing.Size(370, 181);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
