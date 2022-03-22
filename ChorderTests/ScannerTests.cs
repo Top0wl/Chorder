@@ -1,10 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NUnit.Framework;
 
 namespace ChorderTests
 {
-    class ScannerTests
+    public class ScannerTests
     {
+        [Test]
+        public void ScannerClassCreationTest()
+        {
+            Scanner scanner = new Scanner();
+            Assert.NotNull(scanner);
+        }
     }
 }
