@@ -8,6 +8,7 @@ namespace Chorder
 {
     public class Sound
     {
+        public IChordSound chordSound;
         private Chord.Chords chord;
 
         public Sound()
@@ -21,6 +22,7 @@ namespace Chorder
 
         public bool Play()
         {
+            chordSound.Play();
             //TODO: Реализовать метод
             return true;
         }
