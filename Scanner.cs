@@ -26,10 +26,12 @@ namespace Chorder
 
         public Chord Read(string chordString)
         {
-            //TODO: Реализовать чтение строки с аккордами и возвращением соответствующего аккорда
             return new Chord(chordString);
         }
-
+        /// <summary>
+        /// Прочитать следующий аккорд
+        /// </summary>
+        /// <returns>Аккорд</returns>
         public Chord Read()
         {
             string stringChord = listStrings[currentIndex];
