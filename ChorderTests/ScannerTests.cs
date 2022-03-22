@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Chorder;
+using NUnit.Framework;
 
 namespace ChorderTests
 {
