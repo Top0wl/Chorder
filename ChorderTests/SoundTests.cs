@@ -10,7 +10,7 @@ namespace ChorderTests
         public void SoundClassCreationTest()
         {
             Sound sound = new Sound();
-            Assert.NotNull(scanner);
+            Assert.NotNull(sound);
         }
     }
 }

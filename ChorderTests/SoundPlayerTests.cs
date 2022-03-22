@@ -10,7 +10,7 @@ namespace ChorderTests
         public void SoundPlayerClassCreationTest()
         {
             SoundPlayer soundPlayer = new SoundPlayer();
-            Assert.NotNull(scanner);
+            Assert.NotNull(soundPlayer);
         }
     }
 }

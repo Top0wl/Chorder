@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Chorder
 {
-    class Sound
+    public class Sound
     {
-        Sound()
+        public Sound()
         {
 
         }

@@ -18,8 +18,8 @@ namespace Chorder
             G
             //TODO: Дописать аккорды
         }
-
         public Chords ch;
+        public Sound sound;
 
         public Chord()
         {
