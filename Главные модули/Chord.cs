@@ -19,11 +19,10 @@ namespace Chorder
             //TODO: Дописать аккорды
         }
         public Chords ch;
-        public Sound sound;
 
         public void Play()
         {
-            sound.Play();
+            //TODO: Сделать метод Play
         }
 
         public Chord()
@@ -38,7 +37,7 @@ namespace Chorder
                 case "Am":
                 {
                     this.ch = Chords.Am;
-                    sound = new Sound(Chords.Am, new AmChordSound());
+                    //sound = new Sound(Chords.Am, new AmChordSound());
                     break;
                 }
                 case "A":

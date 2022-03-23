@@ -58,7 +58,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Главные модули\Scanner.cs" />
-    <Compile Include="Главные модули\Sound.cs" />
     <Compile Include="Главные модули\SoundPlayer.cs" />
     <EmbeddedResource Include="Форма\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
