@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,12 +21,12 @@ namespace Chorder
             //TODO: Дописать аккорды
         }
         public Chords ch;
-
+        private MemoryStream Resource;
         public void Play()
         {
-            //TODO: Сделать метод Play
+            using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
+                new System.Media.SoundPlayer(gz).Play();
         }
-
         public Chord()
         {
 
@@ -37,7 +39,7 @@ namespace Chorder
                 case "Am":
                 {
                     this.ch = Chords.Am;
-                    //sound = new Sound(Chords.Am, new AmChordSound());
+                    Resource = new MemoryStream(Properties.Resources.Am);
                     break;
                 }
                 case "A":
