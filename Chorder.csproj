@@ -81,7 +81,42 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\%284%29A.gz" />
     <None Include="Resources\%284%29Am.gz" />
+    <None Include="Resources\%284%29C.gz" />
+    <None Include="Resources\%284%29Cm.gz" />
+    <None Include="Resources\%284%29D.gz" />
+    <None Include="Resources\%284%29Dm.gz" />
+    <None Include="Resources\%284%29E.gz" />
+    <None Include="Resources\%284%29Em.gz" />
+    <None Include="Resources\%284%29F.gz" />
+    <None Include="Resources\%284%29Fm.gz" />
+    <None Include="Resources\%284%29G.gz" />
+    <None Include="Resources\%284%29Gm.gz" />
+    <None Include="Resources\%286%29A.gz" />
+    <None Include="Resources\%286%29Am.gz" />
+    <None Include="Resources\%286%29C.gz" />
+    <None Include="Resources\%286%29Cm.gz" />
+    <None Include="Resources\%286%29D.gz" />
+    <None Include="Resources\%286%29Dm.gz" />
+    <None Include="Resources\%286%29E.gz" />
+    <None Include="Resources\%286%29Em.gz" />
+    <None Include="Resources\%286%29F.gz" />
+    <None Include="Resources\%286%29Fm.gz" />
+    <None Include="Resources\%286%29G.gz" />
+    <None Include="Resources\%286%29Gm.gz" />
+    <None Include="Resources\%288%29A.gz" />
+    <None Include="Resources\%288%29Am.gz" />
+    <None Include="Resources\%288%29C.gz" />
+    <None Include="Resources\%288%29Cm.gz" />
+    <None Include="Resources\%288%29D.gz" />
+    <None Include="Resources\%288%29Dm.gz" />
+    <None Include="Resources\%288%29E.gz" />
+    <None Include="Resources\%288%29Em.gz" />
+    <None Include="Resources\%288%29F.gz" />
+    <None Include="Resources\%288%29Fm.gz" />
+    <None Include="Resources\%288%29G.gz" />
+    <None Include="Resources\%288%29Gm.gz" />
     <None Include="Resources\Am.gz" />
   </ItemGroup>
   <ItemGroup>

@@ -26,7 +26,7 @@ namespace Chorder
         public void Play()
         {
             using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
-                new System.Media.SoundPlayer(gz).Play();
+                new System.Media.SoundPlayer(gz).PlaySync();
         }
         public Chord()
         {
