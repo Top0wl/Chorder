@@ -1,6 +1,9 @@
 ﻿using System;
+using System.IO;
+using System.IO.Compression;
 using Chorder;
 using NUnit.Framework;
+using System.Media;
 
 namespace ChorderTests
 {
@@ -12,18 +15,18 @@ namespace ChorderTests
             Chord chord = new Chord();
             Assert.NotNull(chord);
         }
-
+        [Test]
         public void ChordPlayTest()
         {
             Chord chord = new Chord("Am");
             try
             {
-                chord.Play();
-                Assert.Pass();
+                chord.Play2();
+                Assert.True(true);
             }
             catch (Exception e)
             {
-                Assert.Fail();
+               Assert.Fail();
             }
 
         }

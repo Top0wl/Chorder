@@ -21,8 +21,14 @@ namespace Chorder
             //TODO: Дописать аккорды
         }
         public Chords ch;
-        private MemoryStream Resource;
+        public MemoryStream Resource;
+
         public void Play()
+        {
+            using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
+                new System.Media.SoundPlayer(gz).Play();
+        }
+        public void Play2()
         {
             using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
                 new System.Media.SoundPlayer(gz).Play();
@@ -31,7 +37,6 @@ namespace Chorder
         {
 
         }
-
         public Chord(string chordString)
         {
             switch (chordString)
@@ -39,7 +44,7 @@ namespace Chorder
                 case "Am":
                 {
                     this.ch = Chords.Am;
-                    Resource = new MemoryStream(Properties.Resources.Am);
+                    this.Resource = new MemoryStream(Properties.Resources.Am);
                     break;
                 }
                 case "A":
@@ -47,7 +52,6 @@ namespace Chorder
                     this.ch = Chords.A;
                     break;
                 }
-
                 //TODO: Дописать реализации
                 default:
                 {
