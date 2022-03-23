@@ -7,25 +7,45 @@ using System.Threading.Tasks;
 
 namespace Chorder
 {
+    /// <summary>
+    /// Класс сканера
+    /// </summary>
     public class Scanner
     {
+        /// <summary>
+        /// Строка с аккордами
+        /// </summary>
         private String chordString;
+        /// <summary>
+        /// Лист аккордов
+        /// </summary>
         private List<String> listStrings;
+        /// <summary>
+        /// Индекс текущего аккорда
+        /// </summary>
         private int currentIndex = 0;
-
-
+        /// <summary>
+        /// Конструктор сканера
+        /// </summary>
         public Scanner()
         {
 
         }
-
+        /// <summary>
+        /// Конструктор сканера
+        /// </summary>
+        /// <param name="chordString">Строка с аккордами</param>
         public Scanner(String chordString)
         {
             this.chordString = chordString;
             String[] array = chordString.Split(' ');
             listStrings = new List<string>(array);
         }
-
+        /// <summary>
+        /// Прочитать аккорд
+        /// </summary>
+        /// <param name="chordString">стока с аккордами</param>
+        /// <returns>Аккорд (Chord)</returns>
         public Chord Read(string chordString)
         {
             return new Chord(chordString);
@@ -33,7 +53,7 @@ namespace Chorder
         /// <summary>
         /// Прочитать следующий аккорд
         /// </summary>
-        /// <returns>Аккорд</returns>
+        /// <returns>Аккорд(Chord)</returns>
         public Chord Read()
         { 
             string stringChord = listStrings[currentIndex];
