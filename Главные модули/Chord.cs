@@ -60,7 +60,15 @@ namespace Chorder
         public Chord(string chordString, string type)
         {
             Chords.TryParse(chordString, out ch);
-            Resource = new MemoryStream((byte[])Properties.Resources.ResourceManager.GetObject("_" + type + "_" + chordString));
+            try
+            {
+                Resource = new MemoryStream(
+                    (byte[]) Properties.Resources.ResourceManager.GetObject("_" + type + "_" + chordString));
+            }
+            catch (Exception e)
+            {
+
+            }
         }
 
 
