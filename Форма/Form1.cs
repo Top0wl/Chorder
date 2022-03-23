@@ -24,6 +24,7 @@ namespace Chorder
             {
                 Chord chord = scanner.Read();
                 chord.Play();
+                System.Threading.Thread.Sleep(1000);
             }
         }
     }

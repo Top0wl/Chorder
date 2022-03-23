@@ -28,36 +28,14 @@ namespace Chorder
             using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
                 new System.Media.SoundPlayer(gz).Play();
         }
-        public void Play2()
-        {
-            using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
-                new System.Media.SoundPlayer(gz).Play();
-        }
         public Chord()
         {
 
         }
         public Chord(string chordString)
         {
-            switch (chordString)
-            {
-                case "Am":
-                {
-                    this.ch = Chords.Am;
-                    this.Resource = new MemoryStream(Properties.Resources.Am);
-                    break;
-                }
-                case "A":
-                {
-                    this.ch = Chords.A;
-                    break;
-                }
-                //TODO: Дописать реализации
-                default:
-                {
-                    break;
-                }
-            }
+            Chords.TryParse(chordString, out ch);
+            Resource = new MemoryStream((byte[])Properties.Resources.ResourceManager.GetObject(chordString));
         }
     }
 }
