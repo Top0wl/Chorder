@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Аккорды\AmChordSound.cs" />
     <Compile Include="Главные модули\Chord.cs" />
     <Compile Include="Форма\Form1.cs">
       <SubType>Form</SubType>
@@ -54,11 +53,9 @@
     <Compile Include="Форма\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Аккорды\IChordSound.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Главные модули\Scanner.cs" />
-    <Compile Include="Главные модули\SoundPlayer.cs" />
     <EmbeddedResource Include="Форма\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,10 +114,21 @@
     <None Include="Resources\%288%29Fm.gz" />
     <None Include="Resources\%288%29G.gz" />
     <None Include="Resources\%288%29Gm.gz" />
+    <None Include="Resources\%28Down%29Am.gz" />
+    <None Include="Resources\%28Down%29D.gz" />
+    <None Include="Resources\%28Down%29Em.gz" />
+    <None Include="Resources\%28Down%29G.gz" />
+    <None Include="Resources\%28Up%29Am.gz" />
+    <None Include="Resources\%28Up%29D.gz" />
+    <None Include="Resources\%28Up%29Em.gz" />
+    <None Include="Resources\%28Up%29G.gz" />
     <None Include="Resources\Am.gz" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Форма\App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%28Down%29Am.wav" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

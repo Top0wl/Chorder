@@ -12,7 +12,6 @@ namespace Chorder
         private String chordString;
         private List<String> listStrings;
         private int currentIndex = 0;
-        private Form1.Mode currentMode = Form1.Mode.ProMode;
 
 
         public Scanner()
@@ -26,13 +25,6 @@ namespace Chorder
             String[] array = chordString.Split(' ');
             listStrings = new List<string>(array);
         }
-        public Scanner(String chordString, Form1.Mode currentMode)
-        {
-            this.chordString = chordString;
-            this.currentMode = currentMode;
-            String[] array = chordString.Split(' ');
-            listStrings = new List<string>(array);
-        }
 
         public Chord Read(string chordString)
         {
@@ -43,36 +35,29 @@ namespace Chorder
         /// </summary>
         /// <returns>Аккорд</returns>
         public Chord Read()
-        {
-            switch (currentMode)
+        { 
+            string stringChord = listStrings[currentIndex];
+            String[] stringChords = stringChord.Split('_');
+            Chord chord;
+            if (stringChords.Length > 1)
             {
-                case Form1.Mode.ProMode:
+                //Значит там есть какой-то тип
+                if (stringChords[0].ToString() == "Up" || stringChords[0].ToString() == "Down")
                 {
-                    string stringChord = listStrings[currentIndex];
-                    String[] stringChords = stringChord.Split('_');
-                    Chord chord;
-                    if (stringChords.Length > 1)
-                    {
-                        //Значит там есть какой-то тип
-                        chord = new Chord(stringChords[1].ToString(), Int32.Parse(stringChords[0].ToString()));
-                    }
-                    else
-                    {
-                        chord = new Chord(stringChord);
-                    }
-                    currentIndex++;
-                    return chord;
-                    break;
+                    chord = new Chord(stringChords[1].ToString(), stringChords[0].ToString());
                 }
-                default:
+                else
                 {
-                    string stringChord = listStrings[currentIndex];
-                    Chord chord = new Chord(stringChord);
-                    currentIndex++;
-                    return chord;
-                    break;
+                    chord = new Chord(stringChords[1].ToString(), Int32.Parse(stringChords[0].ToString()));
                 }
+
             }
+            else
+            {
+                chord = new Chord(stringChord);
+            }
+            currentIndex++;
+            return chord;
         }
         /// <summary>
         /// Метод проверяет есть ли следующий аккорд в строке

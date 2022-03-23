@@ -25,8 +25,15 @@ namespace Chorder
 
         public void Play()
         {
-            using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
-                new System.Media.SoundPlayer(gz).PlaySync();
+            try
+            {
+                using (GZipStream gz = new GZipStream(Resource, CompressionMode.Decompress))
+                    new System.Media.SoundPlayer(gz).PlaySync();
+            }
+            catch (Exception ex)
+            {
+
+            }
         }
         public Chord()
         {
@@ -40,8 +47,22 @@ namespace Chorder
         public Chord(string chordString, int type)
         {
             Chords.TryParse(chordString, out ch);
+            try
+            {
+                Resource = new MemoryStream(
+                    (byte[]) Properties.Resources.ResourceManager.GetObject("_" + type + "_" + chordString));
+            }
+            catch (Exception e)
+            {
+
+            }
+        }
+        public Chord(string chordString, string type)
+        {
+            Chords.TryParse(chordString, out ch);
             Resource = new MemoryStream((byte[])Properties.Resources.ResourceManager.GetObject("_" + type + "_" + chordString));
         }
+
 
     }
 }

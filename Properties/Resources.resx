@@ -229,4 +229,28 @@
   <data name="_8_Gm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\(8)Gm.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="_Down_Am" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Down)Am.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Down_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Down)D.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Down_Em" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Down)Em.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Down_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Down)G.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Up_Am" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Up)Am.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Up_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Up)D.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Up_Em" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Up)Em.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_Up_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(Up)G.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

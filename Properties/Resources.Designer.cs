@@ -423,6 +423,86 @@ namespace Chorder.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
+        public static byte[] _Down_Am {
+            get {
+                object obj = ResourceManager.GetObject("_Down_Am", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        public static byte[] _Down_D {
+            get {
+                object obj = ResourceManager.GetObject("_Down_D", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        public static byte[] _Down_Em {
+            get {
+                object obj = ResourceManager.GetObject("_Down_Em", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        public static byte[] _Down_G {
+            get {
+                object obj = ResourceManager.GetObject("_Down_G", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        public static byte[] _Up_Am {
+            get {
+                object obj = ResourceManager.GetObject("_Up_Am", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        public static byte[] _Up_D {
+            get {
+                object obj = ResourceManager.GetObject("_Up_D", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        public static byte[] _Up_Em {
+            get {
+                object obj = ResourceManager.GetObject("_Up_Em", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
+        public static byte[] _Up_G {
+            get {
+                object obj = ResourceManager.GetObject("_Up_G", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
         public static byte[] Am {
             get {
                 object obj = ResourceManager.GetObject("Am", resourceCulture);
