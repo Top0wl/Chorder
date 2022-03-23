@@ -16,6 +16,18 @@ namespace ChorderTests
             Assert.NotNull(chord);
         }
         [Test]
+        public void ChordAmClassCreationTest()
+        {
+            Chord chord = new Chord("Am");
+            Assert.NotNull(chord);
+        }
+        [Test]
+        public void Chord4AmClassCreationTest()
+        {
+            Chord chord = new Chord("Am", );
+            Assert.NotNull(chord);
+        }
+        [Test]
         public void ChordPlayTest()
         {
             Chord chord = new Chord("Am");

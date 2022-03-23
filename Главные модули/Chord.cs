@@ -37,5 +37,6 @@ namespace Chorder
             Chords.TryParse(chordString, out ch);
             Resource = new MemoryStream((byte[])Properties.Resources.ResourceManager.GetObject(chordString));
         }
+
     }
 }
