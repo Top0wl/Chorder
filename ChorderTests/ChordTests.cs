@@ -22,6 +22,7 @@ namespace ChorderTests
             try
             {
                 chord.Play2();
+                //Assert.Pass даёт пустой exception...
                 Assert.True(true);
             }
             catch (Exception e)
