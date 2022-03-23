@@ -24,7 +24,7 @@ namespace ChorderTests
         [Test]
         public void Chord4AmClassCreationTest()
         {
-            Chord chord = new Chord("Am", );
+            Chord chord = new Chord("Am", 4);
             Assert.NotNull(chord);
         }
         [Test]

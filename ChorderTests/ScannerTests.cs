@@ -23,7 +23,7 @@ namespace ChorderTests
         [Test]
         public void ScannerReadStringWithChords()
         {
-            String chordsString = "Am E G F";
+            String chordsString = "Am Am";
             Chord chord;
             Scanner scanner = new Scanner(chordsString);
             while (scanner.Next())

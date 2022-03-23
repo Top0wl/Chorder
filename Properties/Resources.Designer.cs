@@ -63,6 +63,16 @@ namespace Chorder.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
+        public static byte[] _4_Am {
+            get {
+                object obj = ResourceManager.GetObject("_4_Am", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
         public static byte[] Am {
             get {
                 object obj = ResourceManager.GetObject("Am", resourceCulture);

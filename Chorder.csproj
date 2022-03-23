@@ -81,6 +81,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\%284%29Am.gz" />
     <None Include="Resources\Am.gz" />
   </ItemGroup>
   <ItemGroup>

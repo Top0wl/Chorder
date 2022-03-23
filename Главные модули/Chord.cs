@@ -37,6 +37,11 @@ namespace Chorder
             Chords.TryParse(chordString, out ch);
             Resource = new MemoryStream((byte[])Properties.Resources.ResourceManager.GetObject(chordString));
         }
+        public Chord(string chordString, int type)
+        {
+            Chords.TryParse(chordString, out ch);
+            Resource = new MemoryStream((byte[])Properties.Resources.ResourceManager.GetObject("_" + type + "_" + chordString));
+        }
 
     }
 }
