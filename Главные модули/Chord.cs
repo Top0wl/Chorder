@@ -8,8 +8,14 @@ using System.Threading.Tasks;
 
 namespace Chorder
 {
+    /// <summary>
+    /// Класс аккорд
+    /// </summary>
     public class Chord
     {
+        /// <summary>
+        /// Перечисление аккордов
+        /// </summary>
         public enum Chords
         {
             Am,
@@ -17,12 +23,23 @@ namespace Chorder
             E,
             Em,
             F,
-            G
-            //TODO: Дописать аккорды
+            Fm,
+            G,
+            Gm,
+            D,
+            Dm
         }
+        /// <summary>
+        /// Название аккорда
+        /// </summary>
         public Chords ch;
+        /// <summary>
+        /// Ссылка на ресурс (аудоифайл)
+        /// </summary>
         public MemoryStream Resource;
-
+        /// <summary>
+        /// Проиграть аккорд
+        /// </summary>
         public void Play()
         {
             try
@@ -35,15 +52,27 @@ namespace Chorder
 
             }
         }
+        /// <summary>
+        /// Конструктор аккорда
+        /// </summary>
         public Chord()
         {
 
         }
+        /// <summary>
+        /// Конструктор аккорда
+        /// </summary>
+        /// <param name="chordString">Строка с аккордом</param>
         public Chord(string chordString)
         {
             Chords.TryParse(chordString, out ch);
             Resource = new MemoryStream((byte[])Properties.Resources.ResourceManager.GetObject(chordString));
         }
+        /// <summary>
+        /// Конструктор аккорда
+        /// </summary>
+        /// <param name="chordString">Строка с аккордом</param>
+        /// <param name="type">Тип перебора</param>
         public Chord(string chordString, int type)
         {
             Chords.TryParse(chordString, out ch);
@@ -57,6 +86,11 @@ namespace Chorder
 
             }
         }
+        /// <summary>
+        /// Конструктор аккорда
+        /// </summary>
+        /// <param name="chordString">Строка с аккордом</param>
+        /// <param name="type">Тип боя вниз, вверх</param>
         public Chord(string chordString, string type)
         {
             Chords.TryParse(chordString, out ch);
@@ -70,7 +104,5 @@ namespace Chorder
 
             }
         }
-
-
     }
 }
